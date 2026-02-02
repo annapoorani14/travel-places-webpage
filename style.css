@@ -1,0 +1,309 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  min-height: 45vh;
+  background:url("background_1.jpg") no-repeat center center/cover;
+}
+.header-container{
+  width: 90%;
+  margin: auto;
+}
+.top-bar{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo{
+  font-size: 40px;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+.btn, .hero-btn{
+  border: 2px solid rgb(61, 13, 13);
+  background-color: rgb(73, 12, 12);
+  color: antiquewhite;
+  border-radius: 20px;
+}
+.hero-content{
+  margin-top: 100px;
+  padding: 50px;
+  color: aliceblue;
+}
+h1{
+  font-size: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+h3{
+  position: relative;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-btn{
+  position: relative;
+  top: 25px;
+  left: 10px;
+  
+}
+
+/* Grid */
+
+/* .famous_places{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.london_img, .rome_img, .paris_img, .amster_img, .barcelona_img{
+  height: 200px;
+  width: 200px;
+}
+.london, .rome{
+  margin-top: 100px;
+  left: 10px;
+} */
+
+/* ===== Famous Places Grid Only ===== */
+
+.places{
+  width: 100%;
+  margin: 50px 0;
+}
+
+.famous_places{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.famous_places .p1{
+  grid-column: 1 / -1;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.famous_places .p2{
+  grid-column: 1 / -1;
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.london, .rome, .paris, .amster, .barcelona{
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.london:hover,
+.rome:hover,
+.paris:hover,
+.amster:hover,
+.barcelona:hover{
+  transform: translateY(-6px);
+}
+
+.london_img,
+.rome_img,
+.paris_img,
+.amster_img,
+.barcelona_img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.london p:first-of-type,
+.rome p:first-of-type{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.london p:nth-of-type(2),
+.rome p:nth-of-type(2),
+.paris p:first-of-type,
+.amster p:first-of-type,
+.barcelona p:first-of-type{
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.btn1{
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: #4a0c0c;
+  color: #fff;
+  font-size: 13px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  min-height: 45vh;
+  background:url("background_1.jpg") no-repeat center center/cover;
+}
+.header-container{
+  width: 90%;
+  margin: auto;
+}
+.top-bar{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo{
+  font-size: 40px;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+.btn, .hero-btn{
+  border: 2px solid rgb(61, 13, 13);
+  background-color: rgb(73, 12, 12);
+  color: antiquewhite;
+  border-radius: 20px;
+}
+.hero-content{
+  margin-top: 100px;
+  padding: 50px;
+  color: aliceblue;
+}
+h1{
+  font-size: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+h3{
+  position: relative;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-btn{
+  position: relative;
+  top: 25px;
+  left: 10px;
+  
+}
+
+/* Grid */
+
+.places{
+  width: 100%;
+  margin: 50px 0;
+}
+
+.famous_places{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.famous_places .para1{
+  grid-column: 1 / -1;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.famous_places .para2{
+  grid-column: 1 / -1;
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.london_img,
+.rome_img,
+.paris_img,
+.amster_img,
+.barcelona_img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.london, .rome, .paris, .amster, .barcelona{
+  background: transparent;
+  box-shadow: none;
+  border-radius: 12px;     
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+.london .p1,
+.rome .p1,
+.paris .p1,
+.amster .p1,
+.barcelona .p1{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.london .p2,
+.rome .p2,
+.paris .p2,
+.amster .p2,
+.barcelona .p2{
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.btn1{
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: #4a0c0c;
+  color: #fff;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 900px){
+  .famous_places{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px){
+  .famous_places{
+    grid-template-columns: 1fr;
+  }
+}
