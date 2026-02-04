@@ -11,8 +11,11 @@ header {
   width: 90%;
   margin: auto;
 }
-.top-bar{
+.navs{
   display: flex;
+}
+.top-bar{
+  /* display: flex; */
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
